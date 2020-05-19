@@ -1,0 +1,155 @@
+[INCLUDE=presentation]
+Title         : [sky theme metadata]{font-size=100%} 
+Sub Title     : [n pages]{.hidden} 
+xAuthor       :
+xAffiliation  :
+xEmail        :
+@nopreview xReveal Url: ../reveal.js   
+Reveal Theme  : beige                  
+Reveal SlideNumber: true
+Reveal Long   : true
+Reveal Details: true 
+.hidden : data-hidden
+x.remarks : .hidden                       {.hidden} 
+x.remarks : color=maroon
+x~Remarks : .remarks 
+
+x~Section: data-background=white
+~Section: data-transition=cube     
+~Notes : color=green
+~p : text-align=left
+~table : font-size=75%
+~h1 : font-size=200%     {default 3.7em}
+~h2 : font-size=150%     {default 2.1em}
+~h3 : font-size=150%     {default 200%}
+Logo : False
+MathJax : True
+Embed : 840 
+
+<!-- reference for printing and style options
+?data-long=true&data-details=true&print-pdf=true
+
+{set Heading Depth : 1 for header numbering in article}
+Reveal Theme : { sky beige serif simple night moon solarized default }
+~Section: data-transition= { cube page concave zoom linear fade none default }
+~Section: data-background-color=white
+-->
+
+
+<!--- Below has become Madoko defaults;
+no longer needed to be included explicitly.
+Section Depth : 2
+Section Base  : 1 
+Heading Depth : 0  
+Heading Base  : 1 
+-->
+
+
+<!-- Below was placed after metadata and before the slides;
+style for notes (can only be included in the content slides to have the effect)
+
+<style>
+    .preview .reveal div.notes,
+    .preview .reveal aside.notes {
+      display  : block;
+      position : absolute;
+      width    : 33%;
+      left     : 72%;
+      top      : -16%;
+      font-size: 50%;
+      text-align: left;
+      line-height: 16pt;
+      border   : 1px solid black;
+      border-radius   : 10px;
+      background-color: white;
+    }
+</style>
+-->
+
+
+<!--- Below was placed after all the slides;
+seems no longer needed now.
+
+<script>
+  [].forEach.call( document.querySelectorAll("section[data-hidden]"), function(elem) {
+    elem.parentNode.removeChild(elem);
+  });
+</script> 
+-->
+
+
+<!--- Below was placed at the end of the file;
+these are options for reference. DON'T DELETE. 
+
+{set Heading Depth : 1 for header numbering in article}
+Reveal Long: true (Working) 
+Reveal Long: false (Working)   
+Reveal Details: true (Working)  
+Reveal Details: False (Working) <---!
+
+{-}
+{- font-size=2.8em}
+{- font-size=2.4em}
+{font-size=80%}
+{font-size=65%}
+{.smaller}
+{.long}
+{.smaller .long}
+.smaller 
+.long
+{data-transition=zoom
+{.fragment width=55%}
+{.fragment}
+{.fragmented}
+{.details}
+{font-size=100%}
+{color=green}
+color=teal
+color=maroon
+color=gray
+color=dimgray
+color=purple
+{color=Gainsboro}
+]{color=silver}
+]{color=red}
+]{color=blue}
+]{.details}
+~Begin Details
+~End Details
+~Begin Notes
+~End Notes
+~Begin Center
+~End Center
+~Begin Vertical
+~End Vertical
+&emsp; 
+
+Math Mode: static|mathjax|dynamic (=static)
+
+{list-style-type=upper-alpha}
+$ROE = \frac{NI}{AVE}  = \frac{NI}{AVTA} \times \frac{AVTA}{AVE} = ROA \times Leverage $ 
+$ROE = (\frac{NI}{REV} \times  \frac{REV}{AVTA}) \times \frac{AVTA}{AVE} = (NPM \times ATO) \times Leverage $ 
+
+{width=50%}
+{tr-odd-background-color=Gainsboro}
+{tr-vertical-align=bottom tr-odd-background-color=Gainsboro}
+
+~Begin Center
+{font-size=80%}
+~End Center
+
+[Smaller Loss Avoidance]: images/Smaller-Loss-Avoidance.png "Smaller Loss Avoidance" {height=600px width=auto max-width=100%}
+
+[HighvsLowOL]: images/HighvsLowOL.png "HighvsLowOL" { height=550px width=750px max-width=100% }
+
+[Operating cycle]: images/Operating-cycle.png "Operating cycle" { width=auto max-width=100%}
+
+
+# Content
+
+[TOC]
+--> 
+
+
+
+<!-- END: content -->

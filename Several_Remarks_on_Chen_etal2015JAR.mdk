@@ -1,0 +1,146 @@
+[INCLUDE=metadata_beigeSlides-old]
+Title         : [Chen et al (2015 JAR)]{font-size=85%} [ ]{.hidden}
+Sub Title     : [Several remarks]{x.hidden} <!-- &nbsp; incl. a space to make latex pdf work -->
+
+<!-- adjustable setting -->
+.remarks { .hidden }
+.remarks { color: maroon }
+Remarks { .remarks } 
+x.long { .hidden }
+x.long { color: gray }
+Long { .long } 
+x.short { .hidden }   <!-- used to hide table columns with colored items -->
+Short { .short }     <!-- used to show only the answers w/o questions -->
+xnotes { display: none }
+x.ghost { .hidden }
+.ghost { color: midnightblue }
+x.seethru { color: transparent }
+.seethru { color: midnightblue }
+.extra { color: maroon }            <!-- {transparent maroon} -->
+.details { color: teal }            <!-- {transparent teal} -->
+x.details { color: transparent }
+x.details { display: none }
+xsection { data-background: white }
+Heading Depth : 0
+h1 {font-size: 150%}     <!-- {font-size: 1.2em} -->
+h3 {font-size: 150%} 
+udl {text-decoration: underline; }
+.breakbefore { page-break-before: always }
+
+<!-- Below alters the math rendering in slides to prevent rewrite mess-up; 
+slow to update but show math correctly -->
+Math Mode: dynamic      
+MathJax: False     
+<!-- True False [both lines above must go together here to change the default; appending this in the 2 lines seems to cause problems] -->
+
+<!-- reference for printing and style options
+?data-long=true&data-details=true&print-pdf=true
+
+[]{.details} effect can be disabled by replacing with []{-}
+
+{set Heading Depth : 1 for header numbering in article}
+Reveal Theme : { sky beige serif simple night moon solarized default }
+~Section: data-transition= { cube page concave zoom linear fade none default }
+~Section: data-background-color=white
+
+{list-style-type=upper-alpha}
+{.align-center}
+{.smaller}
+{-}                   
+{- font-size=2.8em}
+&nbsp;&nbsp;  
+&emsp; 
+{.fragment}
+{.fragmented}
+{ color: teal maroon gray dimgray purple }
+
+$ROE = \frac{NI}{AVE}  = \frac{NI}{AVTA} \times \frac{AVTA}{AVE} = ROA \times Leverage $ 
+$ROE = (\frac{NI}{REV} \times  \frac{REV}{AVTA}) \times \frac{AVTA}{AVE} = (NPM \times ATO) \times Leverage $ 
+
+``` { } 
+  \(**Fundamental Analysis**\) is an approach to evaluating a security  
+  by measuring its \(_**intrinsic value**_\) based on economic, financial and  
+  other quantitative and qualitative information
+```
+
+# ProfitMargin_Example {#profitmargin_example .hidden}
+
+-->
+
+<!-- style for notes (must be included here to have the effect) -->
+<style>
+    .preview .reveal div.notes,
+    .preview .reveal aside.notes {
+      display  : block;
+      position : absolute;
+      width    : 33%;
+      left     : 72%;
+      top      : -16%;
+      font-size: 50%;
+      text-align: left;
+      line-height: 16pt;
+      border   : 1px solid black;
+      border-radius   : 10px;
+      background-color: white;
+    }
+</style>
+
+
+
+~Begin Slide { data-background= }
+
+[TITLE]
+
+~Begin Notes
+~End Notes
+
+~End Slide
+
+
+
+
+# Chen et al (2015) vs. D'Souza et al's (2010){x.smaller}
+
+* Developed a **disaggregation quality** measure (**DQ**) by counting nonmissing data items in company annual reports as reported by Compustat 
+  - {.fragment} As opposed to D’Sofia et al's (2010) **disclosure ratio** measure concerning how comprehensive the disclosure in **earnings announcements** is compared to that in the SEC filings (based on line items reported in Compustat **Preliminary History** and **Unrestated Quarterly** databases).  
+
+
+
+~Begin Vertical {x.remarks}
+
+# Recognition and Disclosure  
+
+* The DQ measure covers items in the **footnotes**, besides those in the financial statements.
+  - {.fragment} Hence, make no distinction between recognition (FS items) and disclosure (fn items)
+  - {.fragment} (?) Does this mean a research opportunity to devise measures for **FS-DQ** and **fn-DQ**?
+
+
+
+# "All" Compustat firms
+
+* Applicable to the universe of Compustat firms (excluding **financial** and **utility** firms due to different _Compustat Balancing Models_ and also **foreign** firms) 
+  - {.fragment} not just some subset of firms (eg, large) or only part of the annual report (eg, narrative reporting in MD&A)
+  - {.fragment} (?) Research opportunity to devise measures for **financial firms **(eg, **banks**)?
+
+
+
+# Suggestion for future research
+
+* Chen et al (2015): Relation between DQ measure and **audit quality**, and **other aspects of financial reporting quality**
+  - {.fragment} (?) more disaggregation means the need to check each disaggregated disclosure
+  - {.fragment} (?) Higher **audit fees** (because more work to do and higher litigation cost as more items subject to audit failure) 
+
+~End Vertical
+
+
+
+# Random thought {.smaller}
+
+* (?) In the investment decision to **choose a stock from two** competing stocks from **different industries** (thus, with different disclosure practices in line with the two industries), 
+  - {.fragment} How to factor in the difference in their disclosure qualities? (eg, how to **trade off disclosure quality and stock price**?)
+
+* {.fragment} (?) Weight the importance of a missing item in an industry by its frequency in appearing in financial reports in that industry? (ie, **penalize more if **the missing item is **rarely missing in that industry**).
+  - {.fragment} Is this different/better than simply **adjusting for industry FEs uniformly**?
+
+
+

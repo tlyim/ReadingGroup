@@ -1,0 +1,180 @@
+Title         : New Document
+Sub Title     :  
+Logo : False
+~h1: font-size=1.2em
+.hidden : data-hidden
+x.remarks : .hidden                       {.hidden} 
+.remarks : color=maroon
+~Remarks : .remarks 
+x.long : .hidden                          {.hidden} 
+.long : color=gray 
+~Long : .long 
+~Details: color=teal
+x~Details: color=transparent      {transparent teal}
+x~Details: display=none                     {=none}
+Section Depth : 2
+Section Base  : 1 
+xHeading Depth : 0
+Heading Base  : 1 
+~Notes : color=green
+~h1 : font-size=120%     {default 3.7em}
+~h2 : font-size=100%     {default 2.1em}
+~h3 : font-size=100%     {default 200%}
+
+<style>
+     P.breakhere {
+       page-break-before: always;
+     }
+</style>
+
+<!--- 
+?data-long=true&data-details=true&print-pdf=true
+
+color=teal
+color=maroon
+color=gray
+color=dimgray
+color=purple
+{list-style-type=upper-alpha}
+
+$ROE = \frac{NI}{AVE}  = \frac{NI}{AVTA} \times \frac{AVTA}{AVE} = ROA \times Leverage $ 
+$ROE = (\frac{NI}{REV} \times  \frac{REV}{AVTA}) \times \frac{AVTA}{AVE} = (NPM \times ATO) \times Leverage $ 
+
+<P CLASS="breakhere">
+
+-->
+
+
+
+[TITLE] 
+
+
+
+# Sample question
+
+$ V_\text{0} = \frac{B_\text{0} + E_\text{1} - B_\text{1}}{(1+r)} + %cont'd
+  \frac{B_\text{1} + E_\text{2} - B_\text{2}}{(1+r)^{2}} + %cont'd
+  \frac{B_\text{2} + E_\text{3} - B_\text{3}}{(1+r)^{3}} + ... $
+
+| \                                   | \        |
+|-------------------------------------|---------:|
+|-------------------------------------|----------|
+| Average net operating assets        | 39,000   |
+| \                                   |          |
+| Net Income                          | 14,000   |
+|                                     |          |
+| Cash flow from operating activities | 17,300   |
+|                                     |          |
+| Cash flow from investing activities | (12,400) |
+|                                     |          |
+|-------------------------------------|----------|
+
+
+
+Rodrigue’s cash flow based accruals ratio in 2007 was *closest* to
+
+A.  -8.5%
+ 
+B.  -19.1%
+ 
+C.  23.3%
+
+~Begin Details
+**Answer** 
+
+C
+
+TAcc (CF based) = 14,000  - [17,300 + (–12,400)] = 9,100  
+
+CF based accruals ratio  
+= TAcc (CF based) / avg. NOA  
+= 9,100/39,000  
+= 23.3%
+
+~Begin Remarks
+`Are the CFS-based and B/S-based accruals ratio directly comparable?`  
+The B/S-based accruals can be different from the CFS-based accruals if _reclassifications occur between operating and non-operating assets/liabilities_ (Hribar and Colins, 2002).
+~End Remarks
+~End Details
+
+
+~Begin Long
+
+---
+# Sample question 2
+
+A.  Matches the timing of revenue recognition with that of associated
+    expenses.
+ 
+B.  Is more conservative
+ 
+C.  Limits management’s discretion in reporting financial results
+ 
+
+~Begin Details
+**Answer** 
+
+C
+~End Details
+
+~End Long
+
+
+
+<script>
+  [].forEach.call( document.querySelectorAll("section[data-hidden]"), function(elem) {
+    elem.parentNode.removeChild(elem);
+  });
+</script> 
+
+
+
+<!--- 
+.details: display=none
+
+~Notes : color=green
+~p : text-align=left
+~table : font-size=75%
+
+{ [INCLUDE=presentation] }
+{set Heading Depth : 1 for header numbering in article}
+Reveal Long: true (Working) 
+Reveal Long: false (Working)   
+Reveal Details: true (Working)  
+Reveal Details: False (Working) <---!
+
+{-}
+{- font-size=2.8em}
+{- font-size=2.4em}
+{font-size=80%}
+{font-size=65%}
+{.smaller}
+{.long}
+{.smaller .long}
+.smaller 
+.long
+{.fragment}
+{.fragmented}
+{.details}
+{font-size=100%}
+{color=green}
+{color=Gainsboro}
+]{color=red}
+]{color=blue}
+]{.details}
+~Begin Details
+~End Details
+~Begin Notes
+~End Notes
+~Begin Center
+~End Center
+~Begin Vertical
+~End Vertical
+&emsp; 
+
+
+
+# Content
+
+[TOC]
+-->
