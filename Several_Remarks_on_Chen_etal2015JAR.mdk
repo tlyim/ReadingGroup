@@ -102,7 +102,7 @@ $ROE = (\frac{NI}{REV} \times  \frac{REV}{AVTA}) \times \frac{AVTA}{AVE} = (NPM 
 # Chen et al (2015) vs. D'Souza et al's (2010){x.smaller}
 
 * Developed a **disaggregation quality** measure (**DQ**) by counting nonmissing data items in company annual reports as reported by Compustat 
-  - {.fragment} As opposed to D’Sofia et al's (2010) **disclosure ratio** measure concerning how comprehensive the disclosure in **earnings announcements** is compared to that in the SEC filings (based on line items reported in Compustat **Preliminary History** and **Unrestated Quarterly** databases).  
+  - {.fragment} As opposed to D’Souza et al's (2010) **disclosure ratio** measure concerning how comprehensive the disclosure in **earnings announcements** is compared to that in the SEC filings (based on line items reported in Compustat **Preliminary History** and **Unrestated Quarterly** databases).  
 
 
 
